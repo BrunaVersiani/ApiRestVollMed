@@ -14,10 +14,12 @@ public record DadosCadastroMedico(
         @Email
         String email,
         @NotBlank
+        String telefone,
+        @NotBlank
         @Pattern(regexp = "\\d{4,6}") //exprecao regular de 4 a 7 digitos
         String crm,
         @NotNull
-        Especialidade especiaçidade,
+        Especialidade especiacidade,
         @NotNull @Valid DadosEndereco endereco) {
 
 }
