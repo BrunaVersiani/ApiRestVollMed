@@ -48,8 +48,7 @@ public class Paciente {
         }
 
     }
-
-    public void inativar(){
+    public void inativarId(){
         this.ativo = false;
     }
 }
